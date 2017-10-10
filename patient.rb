@@ -9,11 +9,11 @@ class Patient
     @last_name = last_name
     @med_list = []
   end
-
+  
   def patient_status(status)
     begin
       # binding.pry
-    raise ArgumentError,"Argument is not a string" unless age.is_a? String
+    raise ArgumentError,"Argument is not a string" unless status.is_a? String
 
     @status = status
     #start error handling

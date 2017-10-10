@@ -11,6 +11,7 @@ puts new_patient.last_name
 puts patient_contact_info
 puts new_patient.patient_status(:coma)
 
+# Could only get an handling by rescuing at the CALL rather than in the function
 begin
 puts new_patient.patient_currently_admitted?
 rescue ArgumentError
